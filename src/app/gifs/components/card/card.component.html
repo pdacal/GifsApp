@@ -1,0 +1,22 @@
+  <div class="card md-2 text-centert bg-dark text-center" >
+
+    <!-- recibir url -->
+      <shared-lazyImage
+        [url]="gif.images.downsized_medium.url"
+        [alt]="gif.title || 'No name'"
+      ></shared-lazyImage>
+      <!-- <img
+        [src]="gif.images.downsized_medium.url"
+        [alt]="gif.title"
+        class="card-img-top"
+        > -->
+
+      <div *ngIf="gif.title" class="card-body text-white">
+        <p class="card-text">
+          {{gif.title}}
+        </p>
+      </div>
+    </div>
+
+
+
